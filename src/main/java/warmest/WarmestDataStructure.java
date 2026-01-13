@@ -1,3 +1,4 @@
+// Part A
 package warmest;
 
 import java.util.HashMap;
