@@ -1,16 +1,16 @@
-# WarmestDataStructure – Part A & Part B
+# WarmestDataStructure - Part A & Part B
 
 ## Project overview
 This project implements a data structure called **WarmestDataStructure** and exposes it through a **Spring Boot REST API**.
 
-The system stores key–value pairs and always knows which key is the *warmest* –  
+The system stores key-value pairs and always knows which key is the *warmest* -  
 the most recently accessed key using `put` or `get` that was not removed.
 
 The project is implemented in **two parts inside a single project**, as intended.
 
 ---
 
-## Part A – Core Data Structure
+## Part A - Core Data Structure
 Part A contains the pure Java implementation of the data structure.
 
 ### Main ideas
@@ -24,20 +24,20 @@ making it the current warmest key.
 All operations run in **O(1)** time complexity.
 
 ### Supported operations
-- `put(key, value)` – add or update a key (returns previous value or null)
-- `get(key)` – return value and make the key warmest
-- `remove(key)` – remove a key
-- `getWarmest()` – return the warmest key or null if empty
+- `put(key, value)` - add or update a key (returns previous value or null)
+- `get(key)` - return value and make the key warmest
+- `remove(key)` - remove a key
+- `getWarmest()` - return the warmest key or null if empty
 
 ---
 
-## Part B – Spring Boot REST API
+## Part B - Spring Boot REST API
 Part B exposes the data structure from Part A using **Spring Boot** and a REST API.
 
 ### Architecture
-- **Controller** – handles HTTP requests
-- **Service** – contains the business logic and holds the data structure
-- **Data Structure** – the implementation from Part A
+- **Controller** - handles HTTP requests
+- **Service** - contains the business logic and holds the data structure
+- **Data Structure** - the implementation from Part A
 
 The service is a **singleton**, so the data is shared between all requests.
 
