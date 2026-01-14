@@ -1,11 +1,11 @@
-// Part B
+//  Part B
 package warmest.controller;
 
 import org.springframework.web.bind.annotation.*;
 import warmest.service.WarmestService;
-
+//Jason
 @RestController
-@RequestMapping("/warmest")
+@RequestMapping("/warmest")  //netiv
 public class WarmestController {
 
     private final WarmestService service;

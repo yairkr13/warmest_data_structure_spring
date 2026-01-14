@@ -1,4 +1,4 @@
-// Part B
+//  Part B
 package warmest.service;
 
 import org.springframework.stereotype.Service;
@@ -9,7 +9,7 @@ import warmest.WarmestDataStructureInterface;
 public class WarmestService {
 
     // Spring services are singletons by default,
-    // so one instance of the data structure is shared between all requests
+    // so one instance of the *data structure* is shared between all requests
     private final WarmestDataStructureInterface ds = new WarmestDataStructure();
 
     // Adds or updates a key-value pair
